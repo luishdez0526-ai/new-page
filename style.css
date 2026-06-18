@@ -1,22 +1,29 @@
 :root{
-    --color-primario: #lalala;
+    --color-primario: #333;
     --color-secundario: #ffffff;
     --color-acento: #007BFF;
 }
 
 body{
     font-family: 'segoe UI', roboto, helvetica, arial, sans-serif;
-    line-height: 1,6;
+    line-height: 1.6;
     color: var(--color-texto);
+    :root{
+    --color-primario:#333;
+    --color-secundario:#ffffff;
+    --color-acento:#007BFF;
+    --color-texto:#222;
+    --transicion:.3s;
+}
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--color-secundario);
 }
 
-header{
+header{ 
     background: var(--color-primario);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0, 1);
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
     position: sticky;
     top: 0;
     z-index: 1000;
